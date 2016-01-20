@@ -16,7 +16,7 @@
 		EC6CD1E11C4F684D00EE344D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1DC1C4F684D00EE344D /* main.m */; };
 		EC6CD1E51C4F687D00EE344D /* LJBRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1E41C4F687D00EE344D /* LJBRootController.m */; };
 		EC6CD1F01C4F6C7B00EE344D /* LJBLoadingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1EE1C4F6C7B00EE344D /* LJBLoadingAnimationController.m */; };
-		EC6CD1F41C4F6D4200EE344D /* LJBLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1F31C4F6D4200EE344D /* LJBLoadingView.m */; };
+		EC6CD1F41C4F6D4200EE344D /* LJBPotLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		EC6CD1E41C4F687D00EE344D /* LJBRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBRootController.m; sourceTree = "<group>"; };
 		EC6CD1ED1C4F6C7B00EE344D /* LJBLoadingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoadingAnimationController.h; sourceTree = "<group>"; };
 		EC6CD1EE1C4F6C7B00EE344D /* LJBLoadingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoadingAnimationController.m; sourceTree = "<group>"; };
-		EC6CD1F21C4F6D4200EE344D /* LJBLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoadingView.h; sourceTree = "<group>"; };
-		EC6CD1F31C4F6D4200EE344D /* LJBLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoadingView.m; sourceTree = "<group>"; };
+		EC6CD1F21C4F6D4200EE344D /* LJBPotLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBPotLoadingView.h; sourceTree = "<group>"; };
+		EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBPotLoadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,8 +200,8 @@
 		EC6CD1F11C4F6CFA00EE344D /* LoadingAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				EC6CD1F21C4F6D4200EE344D /* LJBLoadingView.h */,
-				EC6CD1F31C4F6D4200EE344D /* LJBLoadingView.m */,
+				EC6CD1F21C4F6D4200EE344D /* LJBPotLoadingView.h */,
+				EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */,
 			);
 			path = LoadingAnimation;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC6CD1F41C4F6D4200EE344D /* LJBLoadingView.m in Sources */,
+				EC6CD1F41C4F6D4200EE344D /* LJBPotLoadingView.m in Sources */,
 				EC6CD1E11C4F684D00EE344D /* main.m in Sources */,
 				EC6CD1E51C4F687D00EE344D /* LJBRootController.m in Sources */,
 				EC6CD1F01C4F6C7B00EE344D /* LJBLoadingAnimationController.m in Sources */,

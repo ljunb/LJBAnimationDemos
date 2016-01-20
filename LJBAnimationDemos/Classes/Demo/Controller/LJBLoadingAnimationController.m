@@ -7,11 +7,11 @@
 //
 
 #import "LJBLoadingAnimationController.h"
-#import "LJBLoadingView.h"
+#import "LJBPotLoadingView.h"
 
 @interface LJBLoadingAnimationController ()
 
-@property (nonatomic, strong) LJBLoadingView * loadingView;
+@property (nonatomic, strong) LJBPotLoadingView * loadingView;
 
 @end
 
@@ -22,7 +22,7 @@
     
     // 灌水动画
     self.loadingView = ({
-        LJBLoadingView * view = [[LJBLoadingView alloc] init];
+        LJBPotLoadingView * view = [[LJBPotLoadingView alloc] init];
         view.frame = CGRectMake(20, 84, 80, 80);
         [self.view addSubview:view];
         

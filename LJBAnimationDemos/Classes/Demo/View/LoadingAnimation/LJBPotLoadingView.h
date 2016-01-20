@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LJBLoadingView : UIView
+@interface LJBPotLoadingView : UIView
 
 /**
  *  进度 --> [0, 1]

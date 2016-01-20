@@ -4,14 +4,14 @@
 //
 //  Created by CookieJ on 16/1/20.
 //  Copyright © 2016年 ljunb. All rights reserved.
-//
+//  类罐子注水效果的进度view
 
-#import "LJBLoadingView.h"
+#import "LJBPotLoadingView.h"
 
 static CGFloat const kBackgroundCirclePadding     = 4;
 static CGFloat const kProgressAndBackgroundMargin = 4;
 
-@interface LJBLoadingView ()
+@interface LJBPotLoadingView ()
 {
     UIBezierPath * _backgroundCirclePath;       // 背景view
     CAShapeLayer * _backgroundCircleLayer;
@@ -23,7 +23,7 @@ static CGFloat const kProgressAndBackgroundMargin = 4;
 
 @end
 
-@implementation LJBLoadingView
+@implementation LJBPotLoadingView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     
