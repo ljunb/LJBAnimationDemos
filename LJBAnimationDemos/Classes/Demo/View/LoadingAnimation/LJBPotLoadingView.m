@@ -37,7 +37,6 @@ static CGFloat const kProgressAndBackgroundMargin = 4;
         
         
         _progressCircleLayer             = [[CAShapeLayer alloc] init];
-        _progressCircleLayer.fillColor   = [UIColor grayColor].CGColor;
         [self.layer addSublayer:_progressCircleLayer];
     }
     
@@ -82,6 +81,8 @@ static CGFloat const kProgressAndBackgroundMargin = 4;
                                                      startAngle:startAngle
                                                        endAngle:endAngle
                                                       clockwise:YES];
+    
+    _progressCircleLayer.fillColor = [UIColor colorWithRed:170/255.0 green:170/255.0 blue:170/255.0 alpha:_progress].CGColor;
     _progressCircleLayer.path = _progressCirclePath.CGPath;
 }
 
