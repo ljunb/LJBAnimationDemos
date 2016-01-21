@@ -63,6 +63,7 @@
         
         view;
     });
+    self.loopPieLoadingView.lineColor = [UIColor whiteColor];
     // 显示动画
     [self.loopPieLoadingView show];
     

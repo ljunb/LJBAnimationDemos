@@ -77,7 +77,7 @@ static CGFloat const kDefaultLineWidth = 4; // 默认宽度
     // 起始点动画
     CABasicAnimation * startAnimation = [CABasicAnimation animation];
     startAnimation.keyPath            = @"strokeStart";
-    startAnimation.fromValue          = @(-0.5);
+    startAnimation.fromValue          = @(-0.75);
     startAnimation.toValue            = @1;
     
     // 结束点动画
