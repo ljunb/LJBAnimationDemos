@@ -53,7 +53,6 @@ static CGFloat const kProgressAndBackgroundMargin = 4;
     [self setBackgroundCirclePath];
     
     [self setProgressCirclePath];
-
 }
 
 #pragma mark - 设置背景圆

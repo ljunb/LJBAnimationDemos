@@ -18,6 +18,8 @@
 		EC6CD1F01C4F6C7B00EE344D /* LJBLoadingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1EE1C4F6C7B00EE344D /* LJBLoadingAnimationController.m */; };
 		EC6CD1F41C4F6D4200EE344D /* LJBPotLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */; };
 		ECEE65171C50893D00B987CC /* LJBFanLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */; };
+		ECEE651A1C5091B600B987CC /* LJBLoopPieLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE65191C5091B600B987CC /* LJBLoopPieLoadingView.m */; };
+		ECEE651D1C50B3EB00B987CC /* LJBLoopLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE651C1C50B3EB00B987CC /* LJBLoopLoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBPotLoadingView.m; sourceTree = "<group>"; };
 		ECEE65151C50893D00B987CC /* LJBFanLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBFanLoadingView.h; sourceTree = "<group>"; };
 		ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBFanLoadingView.m; sourceTree = "<group>"; };
+		ECEE65181C5091B600B987CC /* LJBLoopPieLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoopPieLoadingView.h; sourceTree = "<group>"; };
+		ECEE65191C5091B600B987CC /* LJBLoopPieLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoopPieLoadingView.m; sourceTree = "<group>"; };
+		ECEE651B1C50B3EB00B987CC /* LJBLoopLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoopLoadingView.h; sourceTree = "<group>"; };
+		ECEE651C1C50B3EB00B987CC /* LJBLoopLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoopLoadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +213,10 @@
 				EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */,
 				ECEE65151C50893D00B987CC /* LJBFanLoadingView.h */,
 				ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */,
+				ECEE65181C5091B600B987CC /* LJBLoopPieLoadingView.h */,
+				ECEE65191C5091B600B987CC /* LJBLoopPieLoadingView.m */,
+				ECEE651B1C50B3EB00B987CC /* LJBLoopLoadingView.h */,
+				ECEE651C1C50B3EB00B987CC /* LJBLoopLoadingView.m */,
 			);
 			path = LoadingAnimation;
 			sourceTree = "<group>";
@@ -344,6 +354,8 @@
 			files = (
 				ECEE65171C50893D00B987CC /* LJBFanLoadingView.m in Sources */,
 				EC6CD1F41C4F6D4200EE344D /* LJBPotLoadingView.m in Sources */,
+				ECEE651D1C50B3EB00B987CC /* LJBLoopLoadingView.m in Sources */,
+				ECEE651A1C5091B600B987CC /* LJBLoopPieLoadingView.m in Sources */,
 				EC6CD1E11C4F684D00EE344D /* main.m in Sources */,
 				EC6CD1E51C4F687D00EE344D /* LJBRootController.m in Sources */,
 				EC6CD1F01C4F6C7B00EE344D /* LJBLoadingAnimationController.m in Sources */,

@@ -9,6 +9,8 @@
 #import "LJBLoadingAnimationController.h"
 #import "LJBPotLoadingView.h"
 #import "LJBFanLoadingView.h"
+#import "LJBLoopPieLoadingView.h"
+#import "LJBLoopLoadingView.h"
 
 @interface LJBLoadingAnimationController ()
 /**
@@ -19,6 +21,14 @@
  *  扇形动画
  */
 @property (nonatomic, strong) LJBFanLoadingView * fanLoadingView;
+/**
+ *  管道循环加载动画
+ */
+@property (nonatomic, strong) LJBLoopPieLoadingView * loopPieLoadingView;
+/**
+ *  循环加载动画
+ */
+@property (nonatomic, strong) LJBLoopLoadingView * loopLoadingView;
 
 @end
 
@@ -30,7 +40,7 @@
     // 灌水动画
     self.potLoadingView = ({
         LJBPotLoadingView * view = [[LJBPotLoadingView alloc] init];
-        view.frame = CGRectMake(20, 84, 80, 80);
+        view.frame               = CGRectMake(20, 84, 80, 80);
         [self.view addSubview:view];
         
         view;
@@ -39,11 +49,36 @@
     // 扇形动画
     self.fanLoadingView = ({
         LJBFanLoadingView * view = [[LJBFanLoadingView alloc] init];
-        view.frame = CGRectMake(CGRectGetMaxX(self.potLoadingView.frame) + 20, 84, 80, 80);
+        view.frame               = CGRectMake(CGRectGetMaxX(self.potLoadingView.frame) + 20, 84, 80, 80);
         [self.view addSubview:view];
         
         view;
     });
+    
+    // 管道循环加载动画
+    self.loopPieLoadingView = ({
+        LJBLoopPieLoadingView * view = [[LJBLoopPieLoadingView alloc] init];
+        view.frame                   = CGRectMake(CGRectGetMaxX(self.fanLoadingView.frame) + 20, 84, 80, 80);
+        [self.view addSubview:view];
+        
+        view;
+    });
+    // 显示动画
+    [self.loopPieLoadingView show];
+    
+    // 隐藏动画
+    [self performSelector:@selector(removeAnimation) withObject:nil afterDelay:3];
+    
+    // 循环加载动画
+    self.loopLoadingView = ({
+        LJBLoopLoadingView * view = [[LJBLoopLoadingView alloc] init];
+        view.frame                = CGRectMake(20, CGRectGetMaxY(self.potLoadingView.frame) + 20, 80, 80);
+        [self.view addSubview:view];
+        
+        view;
+    });
+    [self.loopLoadingView show];
+    
     
     // 开启计时器，模拟下载速度
     [NSTimer scheduledTimerWithTimeInterval:0.075
@@ -51,9 +86,11 @@
                                    selector:@selector(updateAnimation)
                                    userInfo:nil
                                     repeats:YES];
-    
-    
-    
+}
+
+#pragma mark - 移除动画
+- (void)removeAnimation {
+//    [self.loopPieLoadingView dismiss];
 }
 
 #pragma mark - 计时器方法
