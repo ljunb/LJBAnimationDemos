@@ -8,10 +8,17 @@
 
 #import "LJBLoadingAnimationController.h"
 #import "LJBPotLoadingView.h"
+#import "LJBFanLoadingView.h"
 
 @interface LJBLoadingAnimationController ()
-
-@property (nonatomic, strong) LJBPotLoadingView * loadingView;
+/**
+ *  注水动画
+ */
+@property (nonatomic, strong) LJBPotLoadingView * potLoadingView;
+/**
+ *  扇形动画
+ */
+@property (nonatomic, strong) LJBFanLoadingView * fanLoadingView;
 
 @end
 
@@ -21,9 +28,18 @@
     [super viewDidLoad];
     
     // 灌水动画
-    self.loadingView = ({
+    self.potLoadingView = ({
         LJBPotLoadingView * view = [[LJBPotLoadingView alloc] init];
         view.frame = CGRectMake(20, 84, 80, 80);
+        [self.view addSubview:view];
+        
+        view;
+    });
+    
+    // 扇形动画
+    self.fanLoadingView = ({
+        LJBFanLoadingView * view = [[LJBFanLoadingView alloc] init];
+        view.frame = CGRectMake(CGRectGetMaxX(self.potLoadingView.frame) + 20, 84, 80, 80);
         [self.view addSubview:view];
         
         view;
@@ -35,15 +51,24 @@
                                    selector:@selector(updateAnimation)
                                    userInfo:nil
                                     repeats:YES];
+    
+    
+    
 }
 
 #pragma mark - 计时器方法
 - (void)updateAnimation {
     
-    self.loadingView.progress += 0.05;
+    self.potLoadingView.progress += 0.05;
     
-    if (self.loadingView.progress >= 1) {
-        self.loadingView.progress = 0;
+    if (self.potLoadingView.progress >= 1) {
+        self.potLoadingView.progress = 0;
+    }
+    
+    self.fanLoadingView.progress += 0.05;
+    
+    if (self.fanLoadingView.progress >= 1) {
+        self.fanLoadingView.progress = 0;
     }
 }
 

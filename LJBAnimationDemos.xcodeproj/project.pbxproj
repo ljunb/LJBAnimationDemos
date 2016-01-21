@@ -17,6 +17,7 @@
 		EC6CD1E51C4F687D00EE344D /* LJBRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1E41C4F687D00EE344D /* LJBRootController.m */; };
 		EC6CD1F01C4F6C7B00EE344D /* LJBLoadingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1EE1C4F6C7B00EE344D /* LJBLoadingAnimationController.m */; };
 		EC6CD1F41C4F6D4200EE344D /* LJBPotLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */; };
+		ECEE65171C50893D00B987CC /* LJBFanLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		EC6CD1EE1C4F6C7B00EE344D /* LJBLoadingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoadingAnimationController.m; sourceTree = "<group>"; };
 		EC6CD1F21C4F6D4200EE344D /* LJBPotLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBPotLoadingView.h; sourceTree = "<group>"; };
 		EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBPotLoadingView.m; sourceTree = "<group>"; };
+		ECEE65151C50893D00B987CC /* LJBFanLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBFanLoadingView.h; sourceTree = "<group>"; };
+		ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBFanLoadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,8 @@
 			children = (
 				EC6CD1F21C4F6D4200EE344D /* LJBPotLoadingView.h */,
 				EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */,
+				ECEE65151C50893D00B987CC /* LJBFanLoadingView.h */,
+				ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */,
 			);
 			path = LoadingAnimation;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECEE65171C50893D00B987CC /* LJBFanLoadingView.m in Sources */,
 				EC6CD1F41C4F6D4200EE344D /* LJBPotLoadingView.m in Sources */,
 				EC6CD1E11C4F684D00EE344D /* main.m in Sources */,
 				EC6CD1E51C4F687D00EE344D /* LJBRootController.m in Sources */,
@@ -567,6 +573,7 @@
 				EC6CD1D01C4F67F000EE344D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC6CD1D11C4F67F000EE344D /* Build configuration list for PBXNativeTarget "LJBAnimationDemosTests" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +582,7 @@
 				EC6CD1D31C4F67F000EE344D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC6CD1D41C4F67F000EE344D /* Build configuration list for PBXNativeTarget "LJBAnimationDemosUITests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +591,7 @@
 				EC6CD1D61C4F67F000EE344D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,29 +1,29 @@
 //
-//  LJBLoadingView.m
+//  LJBFanLoadingView.m
 //  LJBAnimationDemos
 //
-//  Created by CookieJ on 16/1/20.
+//  Created by CookieJ on 16/1/21.
 //  Copyright © 2016年 ljunb. All rights reserved.
-//  类罐子注水效果的进度view
+//  扇形进度view
 
-#import "LJBPotLoadingView.h"
+#import "LJBFanLoadingView.h"
 
 static CGFloat const kBackgroundCirclePadding     = 4;
 static CGFloat const kProgressAndBackgroundMargin = 4;
 
-@interface LJBPotLoadingView ()
+@interface LJBFanLoadingView ()
 {
-    UIBezierPath * _backgroundCirclePath;       // 背景view
+    UIBezierPath * _backgroundCirclePath;   // 背景圆
     CAShapeLayer * _backgroundCircleLayer;
     
-    UIBezierPath * _progressCirclePath;         // 进度view
+    UIBezierPath * _progressCirclePath;     // 进度圆
     CAShapeLayer * _progressCircleLayer;
-    
 }
+
 
 @end
 
-@implementation LJBPotLoadingView
+@implementation LJBFanLoadingView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     
@@ -33,19 +33,23 @@ static CGFloat const kProgressAndBackgroundMargin = 4;
         self.backgroundColor             = [UIColor lightGrayColor];
         
         // 底部圆
-        _backgroundCircleLayer           = [[CAShapeLayer alloc] init];
-        _backgroundCircleLayer.fillColor = [UIColor whiteColor].CGColor;
+        _backgroundCircleLayer             = [[CAShapeLayer alloc] init];
+        _backgroundCircleLayer.fillColor   = [UIColor lightGrayColor].CGColor;
+        _backgroundCircleLayer.strokeColor = [UIColor whiteColor].CGColor;
+        _backgroundCircleLayer.lineWidth   = 2;
         [self.layer addSublayer:_backgroundCircleLayer];
         
         // 进度圆
         _progressCircleLayer             = [[CAShapeLayer alloc] init];
+        _progressCircleLayer.fillColor   = [UIColor whiteColor].CGColor;
+        _progressCircleLayer.strokeColor = [UIColor whiteColor].CGColor;
         [self.layer addSublayer:_progressCircleLayer];
     }
     
     return self;
 }
 
-#pragma mark - 设置进度
+#pragma mark - 重写Setter方法
 - (void)setProgress:(CGFloat)progress {
     
     _progress = progress;
@@ -53,7 +57,7 @@ static CGFloat const kProgressAndBackgroundMargin = 4;
     [self setBackgroundCirclePath];
     
     [self setProgressCirclePath];
-
+    
 }
 
 #pragma mark - 设置背景圆
@@ -76,24 +80,26 @@ static CGFloat const kProgressAndBackgroundMargin = 4;
     
     // 设置圆心和半径
     CGPoint centerPoint = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
-    CGFloat radius      = (self.bounds.size.width - (kBackgroundCirclePadding + kProgressAndBackgroundMargin) * 2) / 2;
- 
+    CGFloat radius      = (self.bounds.size.width - kBackgroundCirclePadding * 2) / 2;
+    
     // 开始&结束角度
-    CGFloat startAngle  = M_PI_2 - _progress * M_PI;
-    CGFloat endAngle    = M_PI_2 + _progress * M_PI;
+    CGFloat startAngle  = M_PI_2 * 3;
+    CGFloat endAngle    = M_PI_2 * 3 + _progress * M_PI * 2;
     
-    _progressCirclePath = [UIBezierPath bezierPathWithArcCenter:centerPoint
-                                                         radius:radius
-                                                     startAngle:startAngle
-                                                       endAngle:endAngle
-                                                      clockwise:YES];
+    // 为了达到扇形效果，先添加一个起点，并在最后闭合路径
+    _progressCirclePath = [UIBezierPath bezierPath];
     
-    // 透明度随着进度改变
-    _progressCircleLayer.fillColor = [UIColor colorWithRed:170/255.0 green:170/255.0 blue:170/255.0 alpha:_progress].CGColor;
+    [_progressCirclePath moveToPoint:centerPoint];
+    [_progressCirclePath addArcWithCenter:centerPoint
+                                   radius:radius
+                               startAngle:startAngle
+                                 endAngle:endAngle
+                                clockwise:YES];
+    [_progressCirclePath closePath];
     
     // 关联CAShapeLayer
     _progressCircleLayer.path = _progressCirclePath.CGPath;
+    
 }
-
 
 @end
