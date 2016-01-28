@@ -31,7 +31,7 @@
  */
 @property (nonatomic, strong) LJBLoopLoadingView * loopLoadingView;
 /**
- *  变速圆点加载动画
+ *  圆点加载动画
  */
 @property (nonatomic, strong) LJBLoopSpotLoadingView * loopSpotLoadingView;
 
@@ -85,7 +85,7 @@
     });
     [self.loopLoadingView show];
 
-    // 5、变速圆点加载动画
+    // 5、圆形轨迹圆点加载动画
     self.loopSpotLoadingView = ({
         LJBLoopSpotLoadingView * view = [[LJBLoopSpotLoadingView alloc] init];
         view.frame = CGRectMake(CGRectGetMaxX(self.loopLoadingView.frame) + 20, CGRectGetMinY(self.loopLoadingView.frame), 80, 80);
@@ -111,7 +111,7 @@
 #pragma mark - 计时器方法
 - (void)updateAnimation {
     
-    self.potLoadingView.progress += 0.05;
+    self.potLoadingView.progress += 0.02;
     
     if (self.potLoadingView.progress >= 1) {
         self.potLoadingView.progress = 0;

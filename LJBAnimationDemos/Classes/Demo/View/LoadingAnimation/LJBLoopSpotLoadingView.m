@@ -61,10 +61,7 @@ static CGFloat const kSpotRadius      = 6;
                                  kSpotRadius,
                                  kSpotRadius);
     // 处理圆角
-    UIBezierPath * spotCornerPath = [UIBezierPath bezierPathWithRoundedRect:_spotView.bounds
-                                                          byRoundingCorners:UIRectCornerAllCorners
-                                                                cornerRadii:CGSizeMake(kSpotRadius / 2,
-                                                                                       kSpotRadius / 2)];
+    UIBezierPath * spotCornerPath  = [UIBezierPath bezierPathWithOvalInRect:_spotView.bounds];
     CAShapeLayer * spotCornerLayer = [CAShapeLayer layer];
     spotCornerLayer.path           = spotCornerPath.CGPath;
     _spotView.layer.mask           = spotCornerLayer;
@@ -73,7 +70,7 @@ static CGFloat const kSpotRadius      = 6;
     CAKeyframeAnimation * animation = [CAKeyframeAnimation animation];
     animation.keyPath               = @"position";
     animation.path                  = _circlePath.CGPath;
-    animation.duration              = 1;
+    animation.duration              = 1.5;
     animation.repeatCount           = MAXFLOAT;
     animation.removedOnCompletion   = NO;
     animation.fillMode              = kCAFillModeForwards;
