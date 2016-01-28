@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC26D5741C5873DE001565F6 /* LJBLoopSpotLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC26D5731C5873DE001565F6 /* LJBLoopSpotLoadingView.m */; };
 		EC6CD1AF1C4F67F000EE344D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6CD1AD1C4F67F000EE344D /* Main.storyboard */; };
 		EC6CD1B11C4F67F000EE344D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6CD1B01C4F67F000EE344D /* Assets.xcassets */; };
 		EC6CD1B41C4F67F000EE344D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6CD1B21C4F67F000EE344D /* LaunchScreen.storyboard */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC26D5721C5873DE001565F6 /* LJBLoopSpotLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoopSpotLoadingView.h; sourceTree = "<group>"; };
+		EC26D5731C5873DE001565F6 /* LJBLoopSpotLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoopSpotLoadingView.m; sourceTree = "<group>"; };
 		EC6CD1A11C4F67F000EE344D /* LJBAnimationDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJBAnimationDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6CD1AE1C4F67F000EE344D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC6CD1B01C4F67F000EE344D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -217,6 +220,8 @@
 				ECEE65191C5091B600B987CC /* LJBLoopPieLoadingView.m */,
 				ECEE651B1C50B3EB00B987CC /* LJBLoopLoadingView.h */,
 				ECEE651C1C50B3EB00B987CC /* LJBLoopLoadingView.m */,
+				EC26D5721C5873DE001565F6 /* LJBLoopSpotLoadingView.h */,
+				EC26D5731C5873DE001565F6 /* LJBLoopSpotLoadingView.m */,
 			);
 			path = LoadingAnimation;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 			files = (
 				ECEE65171C50893D00B987CC /* LJBFanLoadingView.m in Sources */,
 				EC6CD1F41C4F6D4200EE344D /* LJBPotLoadingView.m in Sources */,
+				EC26D5741C5873DE001565F6 /* LJBLoopSpotLoadingView.m in Sources */,
 				ECEE651D1C50B3EB00B987CC /* LJBLoopLoadingView.m in Sources */,
 				ECEE651A1C5091B600B987CC /* LJBLoopPieLoadingView.m in Sources */,
 				EC6CD1E11C4F684D00EE344D /* main.m in Sources */,

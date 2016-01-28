@@ -42,22 +42,23 @@ static NSString * const kDemoCellIdentifier = @"AnimationDemoCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSString * clsString = [NSString stringWithFormat:@"LJB%@Controller", self.demoNames[indexPath.row]];
+    NSString * classString = [NSString stringWithFormat:@"LJB%@Controller", self.demoNames[indexPath.row]];
     
-    Class controllerCls = NSClassFromString(clsString);
+    Class controllerClass = NSClassFromString(classString);
     
-    UIViewController * nextController = [[controllerCls alloc] init];
+    UIViewController * nextController = [[controllerClass alloc] init];
     
     nextController.view.backgroundColor = [UIColor whiteColor];
     
     [self.navigationController pushViewController:nextController animated:YES];
 }
 
+
 #pragma mark - Getter / Setter
 - (NSArray *)demoNames {
     
     if (!_demoNames) {
-        _demoNames = @[@"LoadingAnimation", @"TextDemo"];
+        _demoNames = @[@"LoadingAnimation"];
     }
     return _demoNames;
 }
