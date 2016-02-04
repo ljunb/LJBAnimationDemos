@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC0C58541C5C548F0042B952 /* animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = EC0C58531C5C548F0042B952 /* animation.gif */; };
 		EC26D5741C5873DE001565F6 /* LJBLoopSpotLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC26D5731C5873DE001565F6 /* LJBLoopSpotLoadingView.m */; };
 		EC6CD1AF1C4F67F000EE344D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6CD1AD1C4F67F000EE344D /* Main.storyboard */; };
 		EC6CD1B11C4F67F000EE344D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6CD1B01C4F67F000EE344D /* Assets.xcassets */; };
@@ -20,6 +19,7 @@
 		EC6CD1F01C4F6C7B00EE344D /* LJBLoadingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1EE1C4F6C7B00EE344D /* LJBLoadingAnimationController.m */; };
 		EC6CD1F41C4F6D4200EE344D /* LJBPotLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */; };
 		EC98E1051C6392880055DC02 /* LJBLoopScaleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98E1041C6392880055DC02 /* LJBLoopScaleLoadingView.m */; };
+		EC98E1071C63A1BC0055DC02 /* animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = EC98E1061C63A1BC0055DC02 /* animation.gif */; };
 		ECEE65171C50893D00B987CC /* LJBFanLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */; };
 		ECEE651A1C5091B600B987CC /* LJBLoopPieLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE65191C5091B600B987CC /* LJBLoopPieLoadingView.m */; };
 		ECEE651D1C50B3EB00B987CC /* LJBLoopLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE651C1C50B3EB00B987CC /* LJBLoopLoadingView.m */; };
@@ -43,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC0C58531C5C548F0042B952 /* animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animation.gif; sourceTree = "<group>"; };
 		EC26D5721C5873DE001565F6 /* LJBLoopSpotLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoopSpotLoadingView.h; sourceTree = "<group>"; };
 		EC26D5731C5873DE001565F6 /* LJBLoopSpotLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoopSpotLoadingView.m; sourceTree = "<group>"; };
 		EC6CD1A11C4F67F000EE344D /* LJBAnimationDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJBAnimationDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +67,7 @@
 		EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBPotLoadingView.m; sourceTree = "<group>"; };
 		EC98E1031C6392880055DC02 /* LJBLoopScaleLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoopScaleLoadingView.h; sourceTree = "<group>"; };
 		EC98E1041C6392880055DC02 /* LJBLoopScaleLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoopScaleLoadingView.m; sourceTree = "<group>"; };
+		EC98E1061C63A1BC0055DC02 /* animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animation.gif; sourceTree = "<group>"; };
 		ECEE65151C50893D00B987CC /* LJBFanLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBFanLoadingView.h; sourceTree = "<group>"; };
 		ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBFanLoadingView.m; sourceTree = "<group>"; };
 		ECEE65181C5091B600B987CC /* LJBLoopPieLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoopPieLoadingView.h; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		EC6CD1A41C4F67F000EE344D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EC0C58531C5C548F0042B952 /* animation.gif */,
+				EC98E1061C63A1BC0055DC02 /* animation.gif */,
 				EC6CD1AD1C4F67F000EE344D /* Main.storyboard */,
 				EC6CD1B01C4F67F000EE344D /* Assets.xcassets */,
 				EC6CD1B21C4F67F000EE344D /* LaunchScreen.storyboard */,
@@ -339,7 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6CD1B41C4F67F000EE344D /* LaunchScreen.storyboard in Resources */,
-				EC0C58541C5C548F0042B952 /* animation.gif in Resources */,
+				EC98E1071C63A1BC0055DC02 /* animation.gif in Resources */,
 				EC6CD1B11C4F67F000EE344D /* Assets.xcassets in Resources */,
 				EC6CD1AF1C4F67F000EE344D /* Main.storyboard in Resources */,
 			);
