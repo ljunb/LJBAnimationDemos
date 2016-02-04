@@ -45,13 +45,16 @@ static CGFloat const kSpotRadius      = 6;
 
 - (void)show {
     
-    CGFloat originX = kCirclePadding;
-    CGFloat originY = kCirclePadding;
-    CGFloat width   = self.bounds.size.width - kCirclePadding * 2;
-    CGFloat height  = width;
+    CGFloat originX = self.bounds.size.width / 2;
+    CGFloat originY = self.bounds.size.height / 2;
+    CGFloat radius  = originX - kCirclePadding;
     
     // 圆形轨迹path
-    _circlePath       = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(originX, originY, width, height)];
+    _circlePath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(originX, originY)
+                                                 radius:radius
+                                             startAngle:M_PI_2 * 3
+                                               endAngle:M_PI_2 * 7
+                                              clockwise:YES];
     _circleLayer.path = _circlePath.CGPath;
     
     // 圆点frame
@@ -75,6 +78,7 @@ static CGFloat const kSpotRadius      = 6;
     animation.removedOnCompletion   = NO;
     animation.fillMode              = kCAFillModeForwards;
     animation.calculationMode       = kCAAnimationPaced;
+    animation.timingFunction        = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     [_spotView.layer addAnimation:animation forKey:nil];
     
 }

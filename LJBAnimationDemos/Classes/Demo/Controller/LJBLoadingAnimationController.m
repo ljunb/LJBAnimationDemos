@@ -4,7 +4,7 @@
 //
 //  Created by CookieJ on 16/1/20.
 //  Copyright © 2016年 ljunb. All rights reserved.
-//
+//  加载动画
 
 #import "LJBLoadingAnimationController.h"
 #import "LJBPotLoadingView.h"
@@ -12,6 +12,7 @@
 #import "LJBLoopPieLoadingView.h"
 #import "LJBLoopLoadingView.h"
 #import "LJBLoopSpotLoadingView.h"
+#import "LJBLoopScaleLoadingView.h"
 
 @interface LJBLoadingAnimationController ()
 /**
@@ -34,6 +35,8 @@
  *  圆点加载动画
  */
 @property (nonatomic, strong) LJBLoopSpotLoadingView * loopSpotLoadingView;
+
+@property (nonatomic, strong) LJBLoopScaleLoadingView * loopScaleLoadingView;
 
 @end
 
@@ -94,6 +97,17 @@
         view;
     });
     [self.loopSpotLoadingView show];
+    
+    
+    // 6、圆点循环形变加载动画
+    self.loopScaleLoadingView = ({
+        LJBLoopScaleLoadingView * view = [[LJBLoopScaleLoadingView alloc] init];
+        view.frame = CGRectMake(CGRectGetMinX(self.loopPieLoadingView.frame), CGRectGetMinY(self.loopSpotLoadingView.frame), 80, 80);
+        [self.view addSubview:view];
+        
+        view;
+    });
+    [self.loopScaleLoadingView show];
     
     // 开启计时器，模拟下载速度
     [NSTimer scheduledTimerWithTimeInterval:0.075

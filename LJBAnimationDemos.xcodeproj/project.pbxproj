@@ -19,6 +19,7 @@
 		EC6CD1E51C4F687D00EE344D /* LJBRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1E41C4F687D00EE344D /* LJBRootController.m */; };
 		EC6CD1F01C4F6C7B00EE344D /* LJBLoadingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1EE1C4F6C7B00EE344D /* LJBLoadingAnimationController.m */; };
 		EC6CD1F41C4F6D4200EE344D /* LJBPotLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */; };
+		EC98E1051C6392880055DC02 /* LJBLoopScaleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98E1041C6392880055DC02 /* LJBLoopScaleLoadingView.m */; };
 		ECEE65171C50893D00B987CC /* LJBFanLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */; };
 		ECEE651A1C5091B600B987CC /* LJBLoopPieLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE65191C5091B600B987CC /* LJBLoopPieLoadingView.m */; };
 		ECEE651D1C50B3EB00B987CC /* LJBLoopLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE651C1C50B3EB00B987CC /* LJBLoopLoadingView.m */; };
@@ -65,6 +66,8 @@
 		EC6CD1EE1C4F6C7B00EE344D /* LJBLoadingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoadingAnimationController.m; sourceTree = "<group>"; };
 		EC6CD1F21C4F6D4200EE344D /* LJBPotLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBPotLoadingView.h; sourceTree = "<group>"; };
 		EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBPotLoadingView.m; sourceTree = "<group>"; };
+		EC98E1031C6392880055DC02 /* LJBLoopScaleLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoopScaleLoadingView.h; sourceTree = "<group>"; };
+		EC98E1041C6392880055DC02 /* LJBLoopScaleLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoopScaleLoadingView.m; sourceTree = "<group>"; };
 		ECEE65151C50893D00B987CC /* LJBFanLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBFanLoadingView.h; sourceTree = "<group>"; };
 		ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBFanLoadingView.m; sourceTree = "<group>"; };
 		ECEE65181C5091B600B987CC /* LJBLoopPieLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoopPieLoadingView.h; sourceTree = "<group>"; };
@@ -225,6 +228,8 @@
 				ECEE651C1C50B3EB00B987CC /* LJBLoopLoadingView.m */,
 				EC26D5721C5873DE001565F6 /* LJBLoopSpotLoadingView.h */,
 				EC26D5731C5873DE001565F6 /* LJBLoopSpotLoadingView.m */,
+				EC98E1031C6392880055DC02 /* LJBLoopScaleLoadingView.h */,
+				EC98E1041C6392880055DC02 /* LJBLoopScaleLoadingView.m */,
 			);
 			path = LoadingAnimation;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECEE65171C50893D00B987CC /* LJBFanLoadingView.m in Sources */,
+				EC98E1051C6392880055DC02 /* LJBLoopScaleLoadingView.m in Sources */,
 				EC6CD1F41C4F6D4200EE344D /* LJBPotLoadingView.m in Sources */,
 				EC26D5741C5873DE001565F6 /* LJBLoopSpotLoadingView.m in Sources */,
 				ECEE651D1C50B3EB00B987CC /* LJBLoopLoadingView.m in Sources */,
