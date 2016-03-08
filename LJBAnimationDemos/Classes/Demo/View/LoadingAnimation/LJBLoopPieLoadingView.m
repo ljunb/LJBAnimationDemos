@@ -71,7 +71,7 @@ static CGFloat const kDefaultLineWidth = 4; // 默认宽度
     
     // loop view
     _loopPath       = [UIBezierPath bezierPathWithOvalInRect:self.bounds];
-    _loopLayer.lineDashPattern = @[@3, @3];
+    _loopLayer.lineDashPattern = @[@3, @3]; // 设置虚线
     _loopLayer.path = _loopPath.CGPath;
     
     // 起始点动画

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		078F58849C9D44E54523B184 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E0C30EE6D8F6E41A30474E /* libPods.a */; };
+		EC0957FA1C8EA6EA00907FCF /* LJBSpringAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0957F91C8EA6EA00907FCF /* LJBSpringAnimationController.m */; };
+		EC0957FE1C8EBE2400907FCF /* LJBSpringAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0957FD1C8EBE2400907FCF /* LJBSpringAnimationTool.m */; };
+		EC0958001C8EC8BE00907FCF /* spring.gif in Resources */ = {isa = PBXBuildFile; fileRef = EC0957FF1C8EC8BE00907FCF /* spring.gif */; };
 		EC26D5741C5873DE001565F6 /* LJBLoopSpotLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC26D5731C5873DE001565F6 /* LJBLoopSpotLoadingView.m */; };
 		EC6CD1AF1C4F67F000EE344D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6CD1AD1C4F67F000EE344D /* Main.storyboard */; };
 		EC6CD1B11C4F67F000EE344D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6CD1B01C4F67F000EE344D /* Assets.xcassets */; };
@@ -43,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4522778BF37E95EBFF389EE1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		93E0C30EE6D8F6E41A30474E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFFB79EF346C26D381CEEAE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EC0957F81C8EA6EA00907FCF /* LJBSpringAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBSpringAnimationController.h; sourceTree = "<group>"; };
+		EC0957F91C8EA6EA00907FCF /* LJBSpringAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBSpringAnimationController.m; sourceTree = "<group>"; };
+		EC0957FC1C8EBE2400907FCF /* LJBSpringAnimationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBSpringAnimationTool.h; sourceTree = "<group>"; };
+		EC0957FD1C8EBE2400907FCF /* LJBSpringAnimationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBSpringAnimationTool.m; sourceTree = "<group>"; };
+		EC0957FF1C8EC8BE00907FCF /* spring.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spring.gif; sourceTree = "<group>"; };
 		EC26D5721C5873DE001565F6 /* LJBLoopSpotLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoopSpotLoadingView.h; sourceTree = "<group>"; };
 		EC26D5731C5873DE001565F6 /* LJBLoopSpotLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoopSpotLoadingView.m; sourceTree = "<group>"; };
 		EC6CD1A11C4F67F000EE344D /* LJBAnimationDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJBAnimationDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078F58849C9D44E54523B184 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +114,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B3284D1A746ED1FEB4935C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93E0C30EE6D8F6E41A30474E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4246B888F167EFEA923787C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4522778BF37E95EBFF389EE1 /* Pods.debug.xcconfig */,
+				9FFFB79EF346C26D381CEEAE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC0957FB1C8EBE0D00907FCF /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				EC0957FC1C8EBE2400907FCF /* LJBSpringAnimationTool.h */,
+				EC0957FD1C8EBE2400907FCF /* LJBSpringAnimationTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		EC6CD1981C4F67F000EE344D = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +147,8 @@
 				EC6CD1BD1C4F67F000EE344D /* LJBAnimationDemosTests */,
 				EC6CD1C81C4F67F000EE344D /* LJBAnimationDemosUITests */,
 				EC6CD1A21C4F67F000EE344D /* Products */,
+				4246B888F167EFEA923787C2 /* Pods */,
+				0B3284D1A746ED1FEB4935C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +174,7 @@
 		EC6CD1A41C4F67F000EE344D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EC0957FF1C8EC8BE00907FCF /* spring.gif */,
 				EC98E1061C63A1BC0055DC02 /* animation.gif */,
 				EC6CD1AD1C4F67F000EE344D /* Main.storyboard */,
 				EC6CD1B01C4F67F000EE344D /* Assets.xcassets */,
@@ -173,6 +215,7 @@
 		EC6CD1D81C4F684D00EE344D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				EC0957FB1C8EBE0D00907FCF /* Tool */,
 				EC6CD1EC1C4F6C7B00EE344D /* Controller */,
 				EC6CD1EF1C4F6C7B00EE344D /* View */,
 			);
@@ -203,6 +246,8 @@
 			children = (
 				EC6CD1ED1C4F6C7B00EE344D /* LJBLoadingAnimationController.h */,
 				EC6CD1EE1C4F6C7B00EE344D /* LJBLoadingAnimationController.m */,
+				EC0957F81C8EA6EA00907FCF /* LJBSpringAnimationController.h */,
+				EC0957F91C8EA6EA00907FCF /* LJBSpringAnimationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,9 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC6CD1CE1C4F67F000EE344D /* Build configuration list for PBXNativeTarget "LJBAnimationDemos" */;
 			buildPhases = (
+				110E492219761541215DE0DD /* Check Pods Manifest.lock */,
 				EC6CD19D1C4F67F000EE344D /* Sources */,
 				EC6CD19E1C4F67F000EE344D /* Frameworks */,
 				EC6CD19F1C4F67F000EE344D /* Resources */,
+				926E422191F2E82990F03E02 /* Embed Pods Frameworks */,
+				430B87E2819209C8E20BAE3D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,6 +390,7 @@
 				EC98E1071C63A1BC0055DC02 /* animation.gif in Resources */,
 				EC6CD1B11C4F67F000EE344D /* Assets.xcassets in Resources */,
 				EC6CD1AF1C4F67F000EE344D /* Main.storyboard in Resources */,
+				EC0958001C8EC8BE00907FCF /* spring.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +410,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		110E492219761541215DE0DD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		430B87E2819209C8E20BAE3D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		926E422191F2E82990F03E02 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC6CD19D1C4F67F000EE344D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -372,7 +469,9 @@
 				EC26D5741C5873DE001565F6 /* LJBLoopSpotLoadingView.m in Sources */,
 				ECEE651D1C50B3EB00B987CC /* LJBLoopLoadingView.m in Sources */,
 				ECEE651A1C5091B600B987CC /* LJBLoopPieLoadingView.m in Sources */,
+				EC0957FA1C8EA6EA00907FCF /* LJBSpringAnimationController.m in Sources */,
 				EC6CD1E11C4F684D00EE344D /* main.m in Sources */,
+				EC0957FE1C8EBE2400907FCF /* LJBSpringAnimationTool.m in Sources */,
 				EC6CD1E51C4F687D00EE344D /* LJBRootController.m in Sources */,
 				EC6CD1F01C4F6C7B00EE344D /* LJBLoadingAnimationController.m in Sources */,
 				EC6CD1E01C4F684D00EE344D /* AppDelegate.m in Sources */,
@@ -512,6 +611,7 @@
 		};
 		EC6CD1CF1C4F67F000EE344D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4522778BF37E95EBFF389EE1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LJBAnimationDemos/Info.plist;
@@ -524,6 +624,7 @@
 		};
 		EC6CD1D01C4F67F000EE344D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FFFB79EF346C26D381CEEAE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LJBAnimationDemos/Info.plist;

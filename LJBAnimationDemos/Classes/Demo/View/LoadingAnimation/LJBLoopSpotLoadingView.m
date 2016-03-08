@@ -43,6 +43,7 @@ static CGFloat const kSpotRadius      = 6;
     return self;
 }
 
+#pragma mark - 显示动画
 - (void)show {
     
     CGFloat originX = self.bounds.size.width / 2;
@@ -78,11 +79,12 @@ static CGFloat const kSpotRadius      = 6;
     animation.removedOnCompletion   = NO;
     animation.fillMode              = kCAFillModeForwards;
     animation.calculationMode       = kCAAnimationPaced;
-    animation.timingFunction        = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    animation.timingFunction        = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]; // 先慢后快再慢
     [_spotView.layer addAnimation:animation forKey:nil];
     
 }
 
+#pragma mark - 隐藏动画
 - (void)dismiss {
     [self removeFromSuperview];
 }

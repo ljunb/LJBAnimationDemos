@@ -58,7 +58,7 @@ static NSString * const kDemoCellIdentifier = @"AnimationDemoCell";
 - (NSArray *)demoNames {
     
     if (!_demoNames) {
-        _demoNames = @[@"LoadingAnimation"];
+        _demoNames = @[@"LoadingAnimation", @"SpringAnimation"];
     }
     return _demoNames;
 }
