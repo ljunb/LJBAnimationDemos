@@ -7,7 +7,6 @@
 //  基于pop的一个动画Demo
 
 #import "LJBSpringAnimationController.h"
-#import <POP.h>
 #import "LJBSpringAnimationTool.h"
 
 #define LJBScreenSize [UIScreen mainScreen].bounds.size
@@ -155,7 +154,7 @@ static CGFloat const kLJBAnimationDelay = 0.075;        // 动画延迟时间
                                                   withView:view
                                                      delay:delay
                                            completionBlock:^{
-                                               [view removeFromSuperview];
+                                               [view removeFromSuperview]; // for-in取出subViews，故动画结束后就移除
                                            }];
             
             index++;
