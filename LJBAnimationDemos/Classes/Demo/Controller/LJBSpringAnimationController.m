@@ -15,11 +15,7 @@
 /**
  *  开始/结束动画按钮
  */
-@property (nonatomic, strong) UIButton * addButton;
-/**
- *  动画view数组
- */
-@property (nonatomic, strong) NSMutableArray * animationViews;
+@property (nonatomic, strong) UIButton * operateButton;
 
 @end
 
@@ -35,20 +31,20 @@ static CGFloat const kLJBAnimationDelay = 0.075;        // 动画延迟时间
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupAddButton];
+    [self setupOperateButton];
 }
 
 
 #pragma mark - 添加“+”按钮
-- (void)setupAddButton {
+- (void)setupOperateButton {
     
-    UIButton * addButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    addButton.frame = CGRectMake(0, 0, 40, 40);
-    [addButton setBackgroundImage:[UIImage imageNamed:@"btn_topic_community_add"] forState:UIControlStateNormal];
-    addButton.center = CGPointMake(LJBScreenSize.width * 0.5, LJBScreenSize.height * 0.9);
-    [addButton addTarget:self action:@selector(didClick) forControlEvents:UIControlEventTouchDown];
-    [self.view addSubview:addButton];
-    self.addButton = addButton;
+    UIButton * operateButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    operateButton.frame = CGRectMake(0, 0, 40, 40);
+    [operateButton setBackgroundImage:[UIImage imageNamed:@"btn_topic_community_add"] forState:UIControlStateNormal];
+    operateButton.center = CGPointMake(LJBScreenSize.width * 0.5, LJBScreenSize.height * 0.9);
+    [operateButton addTarget:self action:@selector(didClick) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:operateButton];
+    self.operateButton = operateButton;
 
 }
 
@@ -56,13 +52,13 @@ static CGFloat const kLJBAnimationDelay = 0.075;        // 动画延迟时间
 - (void)didClick {
     
     // 修改按钮状态
-    self.addButton.selected = !self.addButton.selected;
+    self.operateButton.selected = !self.operateButton.selected;
     
-    if (!self.addButton.selected) { // 退出动画
+    if (!self.operateButton.selected) { // 退出动画
         
         // 按钮复位
         [UIView animateWithDuration:kLJBSubviewCount * kLJBAnimationDelay animations:^{
-            self.addButton.transform = CGAffineTransformIdentity;
+            self.operateButton.transform = CGAffineTransformIdentity;
         }];
         
         // 退出动画
@@ -72,7 +68,7 @@ static CGFloat const kLJBAnimationDelay = 0.075;        // 动画延迟时间
         
         // 旋转按钮
         [UIView animateWithDuration:kLJBSubviewCount * kLJBAnimationDelay animations:^{
-            self.addButton.transform = CGAffineTransformRotate(self.addButton.transform, M_PI_4*3);
+            self.operateButton.transform = CGAffineTransformRotate(self.operateButton.transform, M_PI_4*3);
         }];
         
         // 开始动画
@@ -144,9 +140,9 @@ static CGFloat const kLJBAnimationDelay = 0.075;        // 动画延迟时间
         
         if (![view isKindOfClass:[UIButton class]]) {
             
-            NSValue * fromValue = @(view.center.y);   // 默认位置
-            NSValue * toValue = @(centerEndY);              // 移出屏幕外
-            CGFloat delay = index * kLJBAnimationDelay;     // 延迟时间
+            NSValue * fromValue = @(view.center.y);     // 默认位置
+            NSValue * toValue = @(centerEndY);          // 移出屏幕外
+            CGFloat delay = index * kLJBAnimationDelay; // 延迟时间
             
             // 退出动画
             [LJBSpringAnimationTool quitAnimationFromValue:fromValue
@@ -160,15 +156,6 @@ static CGFloat const kLJBAnimationDelay = 0.075;        // 动画延迟时间
             index++;
         }
     }
-}
-
-#pragma mark - Getter
-- (NSMutableArray *)animationViews {
-    
-    if (!_animationViews) {
-        _animationViews = [NSMutableArray array];
-    }
-    return _animationViews;
 }
 
 @end
