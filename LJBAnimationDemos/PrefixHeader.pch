@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  LJBAnimationDemos
+//
+//  Created by CookieJ on 16/3/10.
+//  Copyright © 2016年 ljunb. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define LJBScreenSize [UIScreen mainScreen].bounds.size
+
+#endif /* PrefixHeader_pch */

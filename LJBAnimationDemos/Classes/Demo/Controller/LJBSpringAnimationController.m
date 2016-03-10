@@ -9,7 +9,6 @@
 #import "LJBSpringAnimationController.h"
 #import "LJBSpringAnimationTool.h"
 
-#define LJBScreenSize [UIScreen mainScreen].bounds.size
 
 @interface LJBSpringAnimationController ()
 /**

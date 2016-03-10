@@ -30,7 +30,7 @@ static CGFloat const kProgressAndBackgroundMargin = 4;
     if (self = [super initWithFrame:frame]) {
         
         // 背景默认为浅灰色
-        self.backgroundColor             = [UIColor lightGrayColor];
+        self.backgroundColor = [UIColor lightGrayColor];
         
         // 底部圆
         _backgroundCircleLayer             = [[CAShapeLayer alloc] init];

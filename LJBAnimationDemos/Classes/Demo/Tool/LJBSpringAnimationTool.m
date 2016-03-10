@@ -9,10 +9,11 @@
 #import "LJBSpringAnimationTool.h"
 #import <POP.h>
 
-static CGFloat const kLJBSpringFactor = 8;
+static CGFloat const kLJBSpringFactor = 8; // 弹簧因素
 
 @implementation LJBSpringAnimationTool
 
+#pragma mark - 弹出菜单动画
 + (void)beginAnimationFromValue:(id)fromValue toValue:(id)toValue withView:(UIView *)view delay:(CFTimeInterval)delay {
     
     POPSpringAnimation * animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
@@ -24,6 +25,7 @@ static CGFloat const kLJBSpringFactor = 8;
     [view pop_addAnimation:animation forKey:nil];
 }
 
+#pragma mark - 收回菜单动画
 + (void)quitAnimationFromValue:(id)fromValue toValue:(id)toValue withView:(UIView *)view delay:(CFTimeInterval)delay completionBlock:(CompletionBlock)completionBlock {
     
     POPBasicAnimation * animation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerPositionY];
