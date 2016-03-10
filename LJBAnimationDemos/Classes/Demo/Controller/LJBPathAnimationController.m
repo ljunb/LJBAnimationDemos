@@ -117,8 +117,6 @@ static CGFloat const kLJBPathItemRadius = 100;  // 按钮距离中心半径
         
         // 取出按钮
         UIButton * item = self.itemArray[index];
-        item.center = self.operateButton.center;
-        [self.view insertSubview:item belowSubview:self.operateButton];
         
         // 开始点
         CGFloat centerX = self.operateButton.center.x - kLJBPathItemRadius * cos(LJBAverageAngle * index + LJBAverageAngle);

@@ -252,8 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				EC6CD1D81C4F684D00EE344D /* Demo */,
-				EC6CD1D91C4F684D00EE344D /* Other */,
 				EC6CD1DD1C4F684D00EE344D /* Root */,
+				EC6CD1D91C4F684D00EE344D /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

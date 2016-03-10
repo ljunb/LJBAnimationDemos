@@ -35,7 +35,7 @@ static NSString * const kDemoCellIdentifier = @"AnimationDemoCell";
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:kDemoCellIdentifier
                                                              forIndexPath:indexPath];
     
-    cell.textLabel.text    = self.demoNames[indexPath.row];
+    cell.textLabel.text = self.demoNames[indexPath.row];
     
     return cell;
 }
