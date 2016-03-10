@@ -79,9 +79,7 @@ static CGFloat const kLJBPathItemRadius = 100;  // 按钮距离中心半径
 - (void)bloomAllItems {
     
     // 中心按钮动画
-    [UIView animateWithDuration:0.15 animations:^{
-        self.operateButton.transform = CGAffineTransformRotate(self.operateButton.transform, M_PI_4);
-    }];
+    [LJBPathAnimationPool springRotationFromValue:@(0) toValue:@(M_PI_4) withView:self.operateButton];
     
     // 展开按钮动画
     for (NSInteger index = 0; index < self.itemArray.count; index++) {
@@ -108,9 +106,7 @@ static CGFloat const kLJBPathItemRadius = 100;  // 按钮距离中心半径
 - (void)foldAllItems {
     
     // 中心按钮动画
-    [UIView animateWithDuration:0.15 animations:^{
-        self.operateButton.transform = CGAffineTransformIdentity;
-    }];
+    [LJBPathAnimationPool springRotationFromValue:@(M_PI_4) toValue:@(0) withView:self.operateButton];
     
     // 折叠按钮动画
     for (NSInteger index = 0; index < self.itemArray.count; index++) {
@@ -142,6 +138,7 @@ static CGFloat const kLJBPathItemRadius = 100;  // 按钮距离中心半径
     [self setupButtonWithNormalImage:@"chooser-moment-icon-sleep" highlightedImage:@"chooser-moment-icon-sleep-highlighted"];
 }
 
+#pragma mark 添加按钮到数组
 - (void)setupButtonWithNormalImage:(NSString *)normalImage highlightedImage:(NSString *)highlightedImage {
    
     UIButton * item = [UIButton buttonWithType:UIButtonTypeCustom];

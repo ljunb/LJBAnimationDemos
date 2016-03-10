@@ -8,8 +8,7 @@
 
 #import "LJBFanLoadingView.h"
 
-static CGFloat const kBackgroundCirclePadding     = 4;
-static CGFloat const kProgressAndBackgroundMargin = 4;
+static CGFloat const kBackgroundCirclePadding = 4;
 
 @interface LJBFanLoadingView ()
 {

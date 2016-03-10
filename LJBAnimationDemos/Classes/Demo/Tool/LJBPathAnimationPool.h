@@ -12,6 +12,15 @@
 @interface LJBPathAnimationPool : NSObject
 
 /**
+ *  中心按钮旋转动画
+ *
+ *  @param fromValue 初始角度
+ *  @param toValue   结束角度
+ *  @param view      中心按钮
+ */
++ (void)springRotationFromValue:(id)fromValue toValue:(id)toValue withView:(UIView *)view;
+
+/**
  *  仿Path展开动画
  *
  *  @param fromValue 初始位置
