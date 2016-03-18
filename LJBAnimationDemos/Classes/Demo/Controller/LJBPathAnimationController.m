@@ -151,7 +151,6 @@ static CGFloat const kLJBPathItemRadius = 100;  // 按钮距离中心半径
     [self.itemArray addObject:item];
 }
 
-
 #pragma mark - Getter
 - (NSMutableArray *)itemArray {
     if (!_itemArray) {

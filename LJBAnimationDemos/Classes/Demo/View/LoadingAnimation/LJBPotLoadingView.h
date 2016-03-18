@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LJBPotLoadingView : UIView
-
 /**
  *  进度 --> [0, 1]
  */

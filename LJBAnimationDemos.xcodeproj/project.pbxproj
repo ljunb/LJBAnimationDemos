@@ -24,6 +24,7 @@
 		EC6CD1F41C4F6D4200EE344D /* LJBPotLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CD1F31C4F6D4200EE344D /* LJBPotLoadingView.m */; };
 		EC98E1051C6392880055DC02 /* LJBLoopScaleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98E1041C6392880055DC02 /* LJBLoopScaleLoadingView.m */; };
 		EC98E1071C63A1BC0055DC02 /* animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = EC98E1061C63A1BC0055DC02 /* animation.gif */; };
+		ECD2B9A21C92731A0090BD34 /* LJBDingdingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2B9A11C92731A0090BD34 /* LJBDingdingAnimationController.m */; };
 		ECEE65171C50893D00B987CC /* LJBFanLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */; };
 		ECEE651A1C5091B600B987CC /* LJBLoopPieLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE65191C5091B600B987CC /* LJBLoopPieLoadingView.m */; };
 		ECEE651D1C50B3EB00B987CC /* LJBLoopLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEE651C1C50B3EB00B987CC /* LJBLoopLoadingView.m */; };
@@ -99,6 +100,8 @@
 		EC98E1031C6392880055DC02 /* LJBLoopScaleLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoopScaleLoadingView.h; sourceTree = "<group>"; };
 		EC98E1041C6392880055DC02 /* LJBLoopScaleLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBLoopScaleLoadingView.m; sourceTree = "<group>"; };
 		EC98E1061C63A1BC0055DC02 /* animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animation.gif; sourceTree = "<group>"; };
+		ECD2B9A01C92731A0090BD34 /* LJBDingdingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBDingdingAnimationController.h; sourceTree = "<group>"; };
+		ECD2B9A11C92731A0090BD34 /* LJBDingdingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBDingdingAnimationController.m; sourceTree = "<group>"; };
 		ECEE65151C50893D00B987CC /* LJBFanLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBFanLoadingView.h; sourceTree = "<group>"; };
 		ECEE65161C50893D00B987CC /* LJBFanLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJBFanLoadingView.m; sourceTree = "<group>"; };
 		ECEE65181C5091B600B987CC /* LJBLoopPieLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJBLoopPieLoadingView.h; sourceTree = "<group>"; };
@@ -296,6 +299,8 @@
 				EC0957F91C8EA6EA00907FCF /* LJBSpringAnimationController.m */,
 				ECF48B001C9101FF002C804B /* LJBPathAnimationController.h */,
 				ECF48B011C9101FF002C804B /* LJBPathAnimationController.m */,
+				ECD2B9A01C92731A0090BD34 /* LJBDingdingAnimationController.h */,
+				ECD2B9A11C92731A0090BD34 /* LJBDingdingAnimationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -558,6 +563,7 @@
 				ECF48B2D1C912E26002C804B /* LJBPathAnimationPool.m in Sources */,
 				ECEE651D1C50B3EB00B987CC /* LJBLoopLoadingView.m in Sources */,
 				ECEE651A1C5091B600B987CC /* LJBLoopPieLoadingView.m in Sources */,
+				ECD2B9A21C92731A0090BD34 /* LJBDingdingAnimationController.m in Sources */,
 				EC0957FA1C8EA6EA00907FCF /* LJBSpringAnimationController.m in Sources */,
 				EC6CD1E11C4F684D00EE344D /* main.m in Sources */,
 				EC0957FE1C8EBE2400907FCF /* LJBSpringAnimationTool.m in Sources */,

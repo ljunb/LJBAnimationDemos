@@ -45,7 +45,7 @@ static CGFloat const kLJBItemWidthAndHeight = 36; // 按钮大小
     // 角度
     POPSpringAnimation * rotationAnim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
     rotationAnim.fromValue = @(0);
-    rotationAnim.toValue = @(M_PI * 2);
+    rotationAnim.toValue = @(M_PI * 4);
     [view.layer pop_addAnimation:rotationAnim forKey:@"rotation"];
 }
 
@@ -72,9 +72,8 @@ static CGFloat const kLJBItemWidthAndHeight = 36; // 按钮大小
     // 角度
     POPSpringAnimation * rotationAnim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
     rotationAnim.fromValue = @(0);
-    rotationAnim.toValue = @(M_PI * 2);
+    rotationAnim.toValue = @(M_PI * 4);
     [view.layer pop_addAnimation:rotationAnim forKey:@"rotation"];
-    
 }
 
 @end
